@@ -8,13 +8,12 @@
 class MetroGraph;
 class QTextStream;
 
-//地铁站点类定义
 class Station
 {
 protected:
     int id;                  
     QString name;             
-    double X, Y; //站点XY
+    double X, Y; 
     QSet<int> linesInfo;        //Line
     static double minX, minY, maxX, maxY;// Boundary location of all sites
 public:
