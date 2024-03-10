@@ -51,7 +51,7 @@ MainWindow::~MainWindow()
 
 }
 
-//连接信号和槽函数
+//Connecting signals and slot functions
 void MainWindow::myConnect()
 {
     connect(addStation->ui->pushButtonAddLine, SIGNAL(clicked()), this, SLOT(appendLine()));
@@ -59,7 +59,7 @@ void MainWindow::myConnect()
     connect(addStation->ui->pushButtonConnect, SIGNAL(clicked()), this, SLOT(appendConnection()));
 }
 
-//由线路表计算混合颜色
+//Calculation of mixing colours by line table
 QColor MainWindow::getLinesColor(const QList<int>& linesList)
 {
     QColor color1=QColor(255,255,255);
@@ -74,7 +74,7 @@ QColor MainWindow::getLinesColor(const QList<int>& linesList)
     return color1;
 }
 
-//获得线路表的名字集
+//Get the name set of the line table
 QString MainWindow::getLinesName(const QList<int>& linesList)
 {
     QString str;
@@ -87,7 +87,7 @@ QString MainWindow::getLinesName(const QList<int>& linesList)
     return str;
 }
 
-//将站点的XY地理坐标转为视图坐标
+// Convert XY geographic coordinates of the site to view coordinates
 QPointF MainWindow::transferCoord(QPointF coord)
 {
     QPointF minCoord=metroGraph->getMinCoord();
@@ -97,7 +97,7 @@ QPointF MainWindow::transferCoord(QPointF coord)
     return QPointF(x,y);
 }
 
-//绘制网络图的边
+//Drawing the edges of the network diagram
 void MainWindow::drawEdges(const QList<Edge>& edgesList)
 {
     for(int i=0; i<edgesList.size(); ++i)
@@ -119,7 +119,7 @@ void MainWindow::drawEdges(const QList<Edge>& edgesList)
     }
 }
 
-//绘制网络图的站点节点
+//Mapping site nodes for network diagrams
 void MainWindow::drawStations (const QList<int>& stationsList)
 {
     for (int i=0; i<stationsList.size(); ++i)
@@ -154,22 +154,22 @@ void MainWindow::drawStations (const QList<int>& stationsList)
 }
 
 
-//添加线路功能函数
+//Add line function function
 void MainWindow::appendLine()
 {
     QMessageBox box;
     addStation->lineName=addStation->ui->lineEditLineName->text();
-    box.setWindowTitle(u8"添加线路");
+    box.setWindowTitle(u8"Add Lines");
 
     if(addStation->lineName.isEmpty())
     {
         box.setIcon(QMessageBox::Warning);
-        box.setText(u8"请输入线路名称！");
+        box.setText(u8"Please enter a line name!");
     }
     else if(metroGraph->getLineHash(addStation->lineName)==-1)
     {
         box.setIcon(QMessageBox::Information);
-        box.setText(u8"线路："+addStation->lineName+u8" 添加成功！");
+        box.setText(u8"Lines:"+addStation->lineName+u8"Added successfully!");
 
         qDebug()<<"linename:"<<addStation->lineName;
 
@@ -183,10 +183,10 @@ void MainWindow::appendLine()
     else
     {
         box.setIcon(QMessageBox::Critical);
-        box.setText(u8"添加失败！\n错误原因：线路名已存在！");
+        box.setText(u8"Add failed! \n Error Cause: Line name already exists!");
     }
 
-    box.addButton(u8"确定",QMessageBox::AcceptRole);
+    box.addButton(u8"Confirm",QMessageBox::AcceptRole);
     if(box.exec()==QMessageBox::Accepted)
     {
         box.close();
@@ -194,31 +194,31 @@ void MainWindow::appendLine()
 
 }
 
-//添加站点功能函数
+//Add site function function
 void MainWindow::appendStation()
 {
     QMessageBox box;
     addStation->stationName=addStation->ui->lineEditStationName->text();
     addStation->X=addStation->ui->doubleSpinBoxX->value();
     addStation->Y=addStation->ui->doubleSpinBoxY->value();
-    box.setWindowTitle(u8"添加站点");
+    box.setWindowTitle(u8"Add Station");
 
     if(addStation->stationName.isEmpty())
     {
         box.setIcon(QMessageBox::Warning);
-        box.setText(u8"请输入站点名称！");
+        box.setText(u8"Please enter a site name!");
     }
     else if(addStation->linesSelected.isEmpty())
     {
         box.setIcon(QMessageBox::Warning);
-        box.setText(u8"请选择站点所属线路！");
+        box.setText(u8"Please select the line to which the station belongs!");
     }
     else
     {
         if(metroGraph->getStationHash(addStation->stationName)!=-1)
         {
             box.setIcon(QMessageBox::Critical);
-            box.setText(u8"添加失败！\n错误原因：站点已存在！");
+            box.setText(u8"Add failed! \n Error Cause: site already exists!");
         }
         else
         {
@@ -227,11 +227,11 @@ void MainWindow::appendStation()
             metroGraph->addStation(s);
             drawLineMap();
             addStation->updateComboBox();
-            box.setText(u8"站点："+addStation->stationName+u8" 添加成功！");
+            box.setText(u8"Station"+addStation->stationName+u8" Added successfully!");
         }
     }
 
-    box.addButton(u8"确定",QMessageBox::AcceptRole);
+    box.addButton(u8"Confirm",QMessageBox::AcceptRole);
     if(box.exec()==QMessageBox::Accepted)
     {
         box.close();
@@ -239,7 +239,7 @@ void MainWindow::appendStation()
 
 }
 
-//添加连接功能函数
+//Add connection function
 void MainWindow::appendConnection()
 {
     QString station1=addStation->ui->comboBoxConnectStation1->currentText();
@@ -249,32 +249,32 @@ void MainWindow::appendConnection()
     int l=metroGraph->getLineHash(addStation->ui->comboBoxConnectLine->currentText());
 
     QMessageBox box;
-    box.setWindowTitle(u8"添加连接");
+    box.setWindowTitle(u8"Add Connection");
 
     if(s1==-1||s2==-1||l==-1)
     {
         box.setIcon(QMessageBox::Warning);
-        box.setText(u8"请选择已有的站点和线路！");
+        box.setText(u8"Please select an existing station and route!");
     }
     else if(s1==s2)
     {
         box.setIcon(QMessageBox::Warning);
-        box.setText(u8"无法连接相同站点！");
+        box.setText(u8"Unable to connect to the same site!");
     }
     else if(!metroGraph->getStationLinesInfo(s1).contains(l))
     {
         box.setIcon(QMessageBox::Critical);
-        box.setText(u8"连接失败！\n错误原因：所属线路不包含开始站点");
+        box.setText(u8"Connection failed! \nError cause: the line belonging to does not contain the start site");
     }
     else if(!metroGraph->getStationLinesInfo(s2).contains(l))
     {
         box.setIcon(QMessageBox::Critical);
-        box.setText(u8"连接失败！\n错误原因：所属线路不包含结束站点");
+        box.setText(u8"Connection failed! \nError cause: the line belonging to does not contain the end site");
     }
     else
     {
         box.setIcon(QMessageBox::Information);
-        box.setText(u8"添加连接成功！");
+        box.setText(u8"Adding a connection succeeded!");
         metroGraph->addConnection(s1,s2,l);
         drawLineMap();
     }
