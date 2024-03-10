@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>关于</string>
+   <string>ABOUT</string>
   </property>
   <widget class="QPushButton" name="pushButtonexit">
    <property name="geometry">
@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>退出</string>
+    <string>EXIT</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -44,7 +44,7 @@
     </font>
    </property>
    <property name="text">
-    <string>数据结构作业</string>
+    <string>data structure</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -66,7 +66,7 @@
     </font>
    </property>
    <property name="text">
-    <string>同济大学电信学院</string>
+    <string>Telecommunications</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -88,7 +88,7 @@
     </font>
    </property>
    <property name="text">
-    <string>王云杉</string>
+    <string>Yunshan Wang</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
