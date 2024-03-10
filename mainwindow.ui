@@ -25,7 +25,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>地铁换乘查询系统</string>
+   <string>Metro Interchange Enquiry System</string>
   </property>
   <property name="windowIcon">
    <iconset resource="resource.qrc">
@@ -89,25 +89,25 @@
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>文件(&amp;F)</string>
+     <string>File(&amp;F)</string>
     </property>
     <addaction name="actionClose"/>
    </widget>
    <widget class="QMenu" name="menuAddLine">
     <property name="title">
-     <string>增加站点</string>
+     <string>Add Station</string>
     </property>
     <addaction name="actionAdd"/>
    </widget>
    <widget class="QMenu" name="menuTransfer">
     <property name="title">
-     <string>换乘查询</string>
+     <string>Transfer Enquiry</string>
     </property>
     <addaction name="actionquery"/>
    </widget>
    <widget class="QMenu" name="menuabout">
     <property name="title">
-     <string>关于</string>
+     <string>About</string>
     </property>
     <addaction name="actionAbout"/>
    </widget>
@@ -121,7 +121,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>退出</string>
+    <string>Exit</string>
    </property>
    <property name="font">
     <font>
@@ -134,7 +134,7 @@
   </action>
   <action name="actionAdd">
    <property name="text">
-    <string>增加站点</string>
+    <string>Add Stations</string>
    </property>
    <property name="font">
     <font>
@@ -144,12 +144,12 @@
   </action>
   <action name="actionquery">
    <property name="text">
-    <string>换乘查询</string>
+    <string>Transfer enquiry</string>
    </property>
   </action>
   <action name="actionAbout">
    <property name="text">
-    <string>关于</string>
+    <string>About</string>
    </property>
   </action>
  </widget>
