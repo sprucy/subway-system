@@ -20,7 +20,7 @@ void MyView::wheelEvent(QWheelEvent *event)
 
 void MyView::mousePressEvent(QMouseEvent *event)
 {
-    rotate(90);  //视图旋转顺时针90度
+    rotate(90);  //View rotation 90 degrees clockwise
 }
 
 void MyView::keyPressEvent(QKeyEvent *event)
