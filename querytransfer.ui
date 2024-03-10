@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>换乘指南</string>
+   <string>Transfer Guide</string>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
@@ -29,7 +29,7 @@
     </size>
    </property>
    <property name="title">
-    <string>换乘策略</string>
+    <string>Interchange strategy</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -49,7 +49,7 @@
        </font>
       </property>
       <property name="text">
-       <string>所需时间最短</string>
+       <string>Minimum time required</string>
       </property>
       <property name="checked">
        <bool>true</bool>
@@ -70,7 +70,7 @@
        </font>
       </property>
       <property name="text">
-       <string>换乘次数最少</string>
+       <string>Minimum number of interchanges</string>
       </property>
      </widget>
     </item>
@@ -100,7 +100,7 @@
        </font>
       </property>
       <property name="text">
-       <string>换乘</string>
+       <string>Transfer</string>
       </property>
      </widget>
     </item>
@@ -118,7 +118,7 @@
        </font>
       </property>
       <property name="text">
-       <string>退出</string>
+       <string>Exit</string>
       </property>
      </widget>
     </item>
@@ -134,7 +134,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>起点车站</string>
+    <string>Originating Station</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -155,7 +155,7 @@
       </property>
       <item>
        <property name="text">
-        <string>选择路线</string>
+        <string>Choose Line</string>
        </property>
       </item>
      </widget>
@@ -175,7 +175,7 @@
       </property>
       <item>
        <property name="text">
-        <string>选择站点</string>
+        <string>Choose Station</string>
        </property>
       </item>
      </widget>
@@ -192,7 +192,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>终点车站</string>
+    <string>Terminal Station</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -213,7 +213,7 @@
       </property>
       <item>
        <property name="text">
-        <string>选择路线</string>
+        <string>Choose Line</string>
        </property>
       </item>
      </widget>
@@ -233,7 +233,7 @@
       </property>
       <item>
        <property name="text">
-        <string>选择站点</string>
+        <string>Choose Station</string>
        </property>
       </item>
      </widget>
@@ -250,7 +250,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>换乘线路</string>
+    <string>Transfer Route</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
