@@ -19,7 +19,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>添加线路站点</string>
+   <string>Add Stations</string>
   </property>
   <widget class="QGroupBox" name="groupBox_1">
    <property name="geometry">
@@ -31,7 +31,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>增加地铁线路</string>
+    <string>Add Lines</string>
    </property>
    <widget class="QLineEdit" name="lineEditLineName">
     <property name="geometry">
@@ -46,7 +46,7 @@
      <string/>
     </property>
     <property name="placeholderText">
-     <string>输入线路名称</string>
+     <string>Input Line Name</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonChooseColor">
@@ -76,7 +76,7 @@
      </font>
     </property>
     <property name="text">
-     <string>选择颜色</string>
+     <string>Choose Color</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonAddLine">
@@ -100,7 +100,7 @@
      </font>
     </property>
     <property name="text">
-     <string>添加</string>
+     <string>Add</string>
     </property>
     <property name="default">
      <bool>true</bool>
@@ -117,7 +117,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>增加地铁站点</string>
+    <string>Add Stations</string>
    </property>
    <widget class="QLabel" name="labelStation">
     <property name="geometry">
@@ -129,7 +129,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>站 名:</string>
+     <string>Station Name:</string>
     </property>
     <property name="buddy">
      <cstring>lineEditStationName</cstring>
@@ -165,7 +165,7 @@
      <string/>
     </property>
     <property name="placeholderText">
-     <string>添加站点名</string>
+     <string>Add Station Name</string>
     </property>
    </widget>
    <widget class="QLabel" name="labelX">
@@ -189,7 +189,7 @@
      </font>
     </property>
     <property name="text">
-     <string>X坐标:</string>
+     <string>X-coordinate:</string>
     </property>
     <property name="buddy">
      <cstring>doubleSpinBoxX</cstring>
@@ -247,7 +247,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Y坐标:</string>
+     <string>Y-coordinate:</string>
     </property>
     <property name="buddy">
      <cstring>doubleSpinBoxY</cstring>
@@ -305,7 +305,7 @@
      </font>
     </property>
     <property name="text">
-     <string>添加站点</string>
+     <string>Add Station:</string>
     </property>
     <property name="default">
      <bool>true</bool>
@@ -321,7 +321,7 @@
      </rect>
     </property>
     <property name="title">
-     <string>选择线路</string>
+     <string>Choose Line</string>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
@@ -340,7 +340,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>连接站点</string>
+    <string>Connecting Stations</string>
    </property>
    <widget class="QComboBox" name="comboBoxConnectLine">
     <property name="geometry">
@@ -382,7 +382,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>线路:</string>
+     <string>Lines:</string>
     </property>
     <property name="buddy">
      <cstring>comboBoxConnectLine</cstring>
@@ -398,7 +398,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>开 始:</string>
+     <string>Start:</string>
     </property>
     <property name="buddy">
      <cstring>comboBoxConnectStation1</cstring>
@@ -414,7 +414,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>结 束:</string>
+     <string>End:</string>
     </property>
     <property name="buddy">
      <cstring>comboBoxConnectStation2</cstring>
@@ -507,7 +507,7 @@
      </font>
     </property>
     <property name="text">
-     <string>连接</string>
+     <string>Connect</string>
     </property>
     <property name="default">
      <bool>true</bool>
@@ -524,7 +524,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>退出</string>
+    <string>Exit</string>
    </property>
   </widget>
  </widget>
