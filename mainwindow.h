@@ -26,58 +26,58 @@ public:
 
 public slots:
 
-    //动作关闭程序槽函数
+    //Action to close the programme slot function
     void on_actionClose_triggered();
-    //添加线路功能函数
+    //Add line function function
     void appendLine();
-    //添加站点功能函数
+    //Add site function function
     void appendStation();
-    //添加连接功能函数
+    //Add connection function
     void appendConnection();
-    //换乘查询
+    // Interchange Enquiry
     void on_actionquery_triggered();
-    //站点增加
+    //Add Stations
     void on_actionAdd_triggered();
-    //关于
+    //About
     void on_actionAbout_triggered();
 
 protected:
-    Ui::MainWindow *ui;             //主窗口UI
-    Graphics_view_zoom *myView;     //自定义视图，用于鼠标缩放
-    QGraphicsScene *scene;          //场景
-    About * about;
-    AddStation * addStation;       //增加线路和站点类
-    QueryTransfer* querytransfer;       //查询换乘线路和站点类
+    Ui::MainWindow *ui; //Main window UI
+    Graphics_view_zoom *myView; //Custom view for mouse zoom
+    QGraphicsScene *scene; //scene
+    About * about; //Custom view for mouse zoom
+    AddStation * addStation; //Add line and station classes
+    QueryTransfer* querytransfer; //query transfer line and station class
 
 
-    //由线路表计算混合颜色
+    //Calculation of mixing colours by line table
     QColor getLinesColor(const QList<int>& linesList);
-    //获得线路表的名字集
+    //Get the name set of the line table
     QString getLinesName(const QList<int>& linesList);
-    //将站点的XY地理坐标转为视图坐标
+    // Convert XY geographic coordinates of the site to view coordinates
     QPointF transferCoord(QPointF coord);
-    //绘制网络图的边
+    //Drawing the edges of the network diagram
     void drawEdges (const QList<Edge>& edgesList);
-    //绘制网络图的站点节点
+    //Mapping site nodes for network diagrams
     void drawStations (const QList<int>& stationsList);
-    //绘制所有线路图
+    //Mapping of all lines
     void drawLineMap();
 
 private:
-    QLabel* statusLabel1, *statusLabel2, *statusLabel3;     //状态栏三个文本
-    //连接信号和槽函数
+    QLabel* statusLabel1, *statusLabel2, *statusLabel3;     // Three texts in the status bar
+    //Connecting signals and slot functions
     void myConnect();
 
 };
 
-#define LINE_INFO_WIDTH 0   //预留边框用于信息展示
-#define MARGIN 30           //视图左边距
-#define NET_WIDTH 1000      //网络图最大宽度
-#define NET_HEIGHT 1000     //网络图最大高度
-#define SCENE_WIDTH (LINE_INFO_WIDTH+MARGIN*2+NET_WIDTH)    //视图宽度
-#define SCENE_HEIGHT (MARGIN*2+NET_HEIGHT)                  //视图高度
+#define LINE_INFO_WIDTH 0   //Reserve borders for information display
+#define MARGIN 30           //View Left Margin
+#define NET_WIDTH 1000      //Maximum width of network diagram
+#define NET_HEIGHT 1000     //Maximum height of network diagram
+#define SCENE_WIDTH (LINE_INFO_WIDTH+MARGIN*2+NET_WIDTH)    //view width
+#define SCENE_HEIGHT (MARGIN*2+NET_HEIGHT)                  //view height
 
-#define EDGE_PEN_WIDTH 2    //线路边宽
-#define NODE_HALF_WIDTH 3   //节点大小
+#define EDGE_PEN_WIDTH 2    //Line edge width
+#define NODE_HALF_WIDTH 3   //node size
 
 #endif // MAINWINDOW_H
