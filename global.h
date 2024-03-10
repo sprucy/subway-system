@@ -2,5 +2,5 @@
 #define GLOBAL_H
 #include "metroGraph.h"
 
-extern MetroGraph* metroGraph;       //地铁管理类
+extern MetroGraph* metroGraph;       //Metro management category
 #endif // GLOBAL_H
