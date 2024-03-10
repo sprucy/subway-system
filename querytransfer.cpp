@@ -134,7 +134,7 @@ void QueryTransfer::transferQuery()
 //            scene->clear();
 //            drawEdges(edgesList);
 //            drawStations(stationsList);
-            QString text=way==1?(u8"换乘实现最短：共换乘"+QString::number(stationsList.size()-1)+u8"个站点\n\n"):(u8"换乘站数最少：共换乘"+QString::number(stationsList.size()-1)+u8"条线路\n\n");
+            QString text=way==1?(u8"Shortest interchange realisation: total interchange"+QString::number(stationsList.size()-1)+u8"stations\n\n"):(u8"Shortest interchange realisation: total interchange"+QString::number(stationsList.size()-1)+u8"lines\n\n");
             for(int i=0; i<stationsList.size(); ++i)
             {
                 if(i)
@@ -152,10 +152,10 @@ void QueryTransfer::transferQuery()
         else
         {
             QMessageBox box;
-            box.setWindowTitle(u8"换乘查询");
+            box.setWindowTitle(u8"Transfer enquiry");
             box.setIcon(QMessageBox::Warning);
-            box.setText(u8"您选择的起始和终止站点暂时无法到达！");
-            box.addButton(u8"确定",QMessageBox::AcceptRole);
+            box.setText(u8"The start and end sites you have selected are temporarily unavailable!");
+            box.addButton(u8"Confirm",QMessageBox::AcceptRole);
             if(box.exec()==QMessageBox::Accepted)
             {
                 box.close();
