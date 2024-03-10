@@ -77,7 +77,7 @@ void QueryTransfer::transferStartLineChanged(QString lineName)
     }
 }
 
-//换乘目的线路改变槽函数
+//Transfer destination line change slot function
 void QueryTransfer::transferDstLineChanged(QString lineName)
 {
     QComboBox* comboS2=ui->comboBoxDstStation;
@@ -96,7 +96,7 @@ void QueryTransfer::transferDstLineChanged(QString lineName)
     }
 }
 
-//换乘查询槽函数
+//Transfer query slot function
 void QueryTransfer::transferQuery()
 {
     int s1=metroGraph->getStationHash(ui->comboBoxStartStation->currentText());
@@ -106,10 +106,10 @@ void QueryTransfer::transferQuery()
     if(s1==-1||s2==-1)
     {
         QMessageBox box;
-        box.setWindowTitle(u8"换乘查询");
+        box.setWindowTitle(u8"Transfer enquiry");
         box.setIcon(QMessageBox::Warning);
-        box.setText(u8"请选择有站点的线路");
-        box.addButton(u8"确定",QMessageBox::AcceptRole);
+        box.setText(u8"Please choose a route with a stop");
+        box.addButton(u8"Confirm",QMessageBox::AcceptRole);
         if(box.exec()==QMessageBox::Accepted)
         {
             box.close();
