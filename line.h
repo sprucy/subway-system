@@ -7,29 +7,29 @@
 #include <QSet>
 #include <QVector>
 
-//定义边类型
+// Define the edge type
 typedef QPair<int,int> Edge;
 
-class MetroGraph;
+Class MetroGraph;
 class QTextStream;
 
-//线路类
+// line class
 class Line{
-protected:
-    int id;                     //线路ID
-    QString name;               //线路名称
-    QColor color;               //线路颜色
-    QVector <QString> fromTo;   //线路起始站点
-    QSet<int> stationsSet;      //线路站点集合
-    QSet<Edge> edges;           //线路站点连接关系
+class
+    int id; //line ID
+    QString name; //line name
+    QColor color; //Line colour
+    QVector <QString> fromTo; //line start station
+    QSet<int> stationsSet; //line stations set
+    QSet<Edge> edges; //Line station connection relationship
 
 public:
-    //构造函数
+    //constructor
     Line(){}
-    Line(QString lineName, QColor lineColor):name(lineName), color(lineColor)
+    Line(QString lineName, QColor lineColor):name(lineName), colour(lineColor)
     {}
 
-    //声明友元
+    // Declare friends
     friend class MetroGraph;
     friend class QTextStream;
 };
