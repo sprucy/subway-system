@@ -10,7 +10,7 @@
 #include <QTextStream>
 #include <QDebug>
 
-//构造函数
+// Constructor
 AddStation::AddStation(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AddStation)
@@ -22,14 +22,14 @@ AddStation::AddStation(QWidget *parent) :
 
 }
 
-//析构函数
+//Destructor
 AddStation::~AddStation()
 {
     delete ui;
 }
 
 
-//更新线路列表信息
+//Update route list information
 void AddStation::updateLinesListWidget()
 {
     QListWidget* listWidget=ui->listWidget;
@@ -52,7 +52,7 @@ void AddStation::updateLinesListWidget()
     }
 }
 
-//更新选择部件
+// Update selection widgets
 void AddStation::updateComboBox()
 {
     ui->comboBoxConnectStation1->clear();
@@ -71,7 +71,7 @@ void AddStation::updateComboBox()
     }
 }
 
-//点击选择颜色按钮
+//Click on the Select Colour button
 void AddStation::on_pushButtonChooseColor_clicked()
 {
     QColorDialog colorDialog;
@@ -82,7 +82,7 @@ void AddStation::on_pushButtonChooseColor_clicked()
 }
 
 
-//列表部件选择项改变
+//List widget selections change
 void AddStation::on_listWidget_itemClicked(QListWidgetItem *item)
 {
     Q_UNUSED(item);
