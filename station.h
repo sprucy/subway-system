@@ -12,19 +12,17 @@ class QTextStream;
 class Station
 {
 protected:
-    int id;                     //站点ID
-    QString name;               //站点名称
+    int id;                  
+    QString name;             
     double X, Y; //站点XY
-    QSet<int> linesInfo;        //站点所属线路
-    static double minX, minY, maxX, maxY;//所有站点的边界位置
+    QSet<int> linesInfo;        //Line
+    static double minX, minY, maxX, maxY;// Boundary location of all sites
 public:
-    Station();    //构造函数
+    Station();    
     Station(QString nameStr, double x, double y, QList<int> linesList);
 protected:
-    //求取站点间实地直线距离
     int distance(Station other);
 
-    //声明友元
     friend class MetroGraph;
     friend class QTextStream;
 
