@@ -1,361 +1,361 @@
-﻿id: 1   
-name: 1号线   
+id: 1   
+name: Line 1   
 colour: #E70012   
-fromTo: 富锦路 莘庄  
+fromTo: Fujin Road Xinzhuang  
 totalStations: 28   
-1 富锦路 805,10
-2 友谊西路 805,59
-3 宝安公路 805,108
-4 共富新村 805,157
-5 呼兰路 805,206
-6 通河新村 805,255
-7 共康路 805,304
-8 彭浦新村 805,353
-9 汶水路 805,402
-10 上海马戏城 805,451
-11 延长路 805,500
-12 中山北路 805,549
-13 上海火车站 805,605
-14 汉中路 805,648
-15 新闸路 805,690
-16 人民广场 802,744
-17 黄陂南路 800,789
-18 陕西南路 737,789
-19 常熟路 673,789
-20 衡山路 616,789
-21 徐家汇 616,876
-22 上海体育馆 527,925
-23 漕宝路 496,967
-24 上海南站 454,1013
-25 锦江乐园 414,1048
-26 莲花路 374,1086
-27 外环路 334,1121
-28 莘庄 294,1156
+1 Fu Jin Road 805,10
+2 West Friendship Road 805,59
+3 Bao'an Highway 805,108
+4 Gongfu Xincun 805,157
+5 Hulan Road 805,206
+6 Tonghe Xincun 805,255
+7 Gongkang Road 805,304
+8 Pengpu Xincun 805,353
+9 Wenshui Road 805,402
+10 Shanghai Circus City 805,451
+11 Yanchang Road 805,500
+12 Zhongshan North Road 805,549
+13 Shanghai Railway Station 805,605
+14 Hanzhong Road 805,648
+15 Xinzha Road 805,690
+16 People's Square 802,744
+17 Huangpi South Road 800,789
+18 South Shaanxi Road 737,789
+19 Changshu Road 673,789
+20 Hengshan Rd 616,789
+21 Xujiahui 616,876
+22 Shanghai Stadium 527,925
+23 Caobao Road 496,967
+24 Shanghai South Railway Station 454,1013
+25 Jinjiang Paradise 414,1048
+26 Lotus Road 374,1086
+27 Outer Ring Road 334,1121
+28 Xinzhuang 294,1156
     
 id: 2   
-name: 2号线   
+name: Line 2   
 colour: #008000   
-fromTo: 浦东国际机场 徐泾东  
+fromTo: Pudong International Airport Xujing East  
 totalStations: 30   
-1 浦东国际机场 1716,977
-2 海天三路 1646,977
-3 远东大道 1588,977
-4 凌空路 1530,977
-5 川沙 1473,977
-6 华夏东路 1473,935
-7 创新中路 1473,887
-8 唐镇 1422,887
-9 广兰路 1369,887
-10 金科路 1318,887
-11 张江高科 1258,887
-12 龙阳路 1203,887
-13 世纪公园 1117,886
-14 上海科技馆 1115,834
-15 世纪大道 1042,744
-16 东昌路 985,744
-17 陆家嘴 940,744
-18 南京东路 885,744
-19 人民广场 802,744
-20 南京西路 724,744
-21 静安寺 673,744
-22 江苏路 623,701
-23 中山公园 527,670
-24 娄山关路 468,670
-25 威宁路 426,670
-26 北新泾 378,670
-27 淞虹路 301,670
-28 虹桥2号航站楼 226,670
-29 虹桥火车站 152,670
-30 徐泾东 92,670
+1 Pudong International Airport 1716,977
+2 Haitian Third Road 1646,977
+3 Far East Road 1588,977
+4 Lingkong Road 1530,977
+5 Chuansha 1473,977
+6 East Huaxia Road 1473,935
+7 Innovation Middle Road 1473,887
+8 Tangzhen 1422,887
+9 Guanglan Road 1369,887
+10 Jinke Road 1318,887
+11 Zhangjiang Hi-Tech 1258,887
+12 Longyang Road 1203,887
+13 Century Park 1117,886
+14 Shanghai Science and Technology Museum 1115,834
+15 Century Avenue 1042,744
+16 Dongchang Road 985,744
+17 Lujiazui 940,744
+18 Nanjing East Road 885,744
+19 People's Square 802,744
+20 Nanjing West Road 724,744
+21 Jing'an Temple 673,744
+22 Jiangsu Road 623,701
+23 Zhongshan Park 527,670
+24 Lou Shan Guan Road 468,670
+25 Weining Road 426,670
+26 Beixinjing 378,670
+27 Songhong Road 301,670
+28 Hongqiao Terminal 2 226,670
+29 Hongqiao Railway Station 152,670
+30 Xujing East 92,670
     
 id: 3   
-name: 3号线   
+name: Line 3   
 colour: #FFD100   
-fromTo: 上海南站 江杨北路  
+fromTo: Shanghai South Railway Station Jiangyang Beilu  
 totalStations: 29   
-1 上海南站 454,1013
-2 石龙路 521,1013
-3 龙漕路 576,1013
-4 漕溪路 577,965
-5 宜山路 527,876
-6 虹桥路 527,777
-7 延安西路 527,716
-8 中山公园 527,670
-9 金沙江路 527,605
-10 曹杨路 623,605
-11 镇坪路 673,605
-12 中潭路 725,605
-13 上海火车站 805,605
-14 宝山路 910,605
-15 东宝兴路 910,570
-16 虹口足球场 911,536
-17 赤峰路 911,485
-18 大柏树 911,448
-19 江湾镇 911,400
-20 殷高西路 911,358
-21 长江南路 911,316
-22 淞发路 912,273
-23 张华浜 987,273
-24 淞滨路 987,223
-25 水产路 987,183
-26 宝杨路 987,146
-27 友谊路 987,102
-28 铁力路 987,55
-29 江杨北路 987,8
+1 Shanghai South Station 454,1013
+2 shilong road 521,1013
+3 Longcao Road 576,1013
+4 Caoxi Road 577,965
+5 Yishan Road 527,876
+6 Hongqiao Road 527,777
+7 West Yan'an Road 527,716
+8 Zhongshan Park 527,670
+9 Jinshajiang Road 527,605
+10 Cao Yang Road 623,605
+11 Zhenping Road 673,605
+12 Zhongtan Road 725,605
+13 Shanghai Railway Station 805,605
+14 Baoshan Road 910,605
+15 East Baoxing Road 910,570
+16 Hongkou Football Stadium 911,536
+17 Chifeng Road 911,485
+18 Dapashu 911,448
+19 Jiangwan Town 911,400
+20 West Yin Gao Road 911,358
+21 South Changjiang Road 911,316
+22 Songfa Road 912,273
+23 Zhanghuabang 987,273
+24 Songbin Road 987,223
+25 Shui Shuang Road 987,183
+26 Baoyang Road 987,146
+27 Friendship Road 987,102
+28 Tieli Road 987,55
+29 Jiangyang North Road 987,8
     
 id: 4   
-name: 4号线   
+name: Line 4   
 colour: #471E86   
-fromTo: 宜山路 虹桥路  
+fromTo: Yishan Road Hongqiao Road  
 totalStations: 26   
-1 宜山路 527,876
-2 上海体育馆 527,925
-3 上海体育场 615,925
-4 东安路 673,925
-5 大木桥路 728,925
-6 鲁班路 789,925
-7 西藏南路 847,925
-8 南浦大桥 901,925
-9 塘桥 975,925
-10 蓝村路 1042,925
-11 浦电路 989,832
-12 世纪大道 1042,744
-13 浦东大道 1042,697
-14 杨树浦路 1042,656
-15 大连路 1042,605
-16 临平路 1003,605
-17 海伦路 963,605
-18 宝山路 910,605
-19 上海火车站 805,605
-20 中潭路 725,605
-21 镇坪路 673,605
-22 曹杨路 623,605
-23 金沙江路 527,605
-24 中山公园 527,670
-25 延安西路 527,716
-26 虹桥路 527,777
+1 yishan road 527,876
+2 Shanghai Stadium 527,925
+3 Shanghai Stadium 615,925
+4 Dong'an Road 673,925
+5 Damuqiao Road 728,925
+6 Lu Ban Road 789,925
+7 South Tibet Road 847,925
+8 Nanpu Bridge 901,925
+9 Tongqiao 975,925
+10 Lancun Road 1042,925
+11 Pudu Circuit 989,832
+12 Century Avenue 1042,744
+13 Pudong Avenue 1042,697
+14 Yangshupu Road 1042,656
+15 Dalian Road 1042,605
+16 Linping Road 1003,605
+17 Hailun Road 963,605
+18 Baoshan Road 910,605
+19 Shanghai Railway Station 805,605
+20 Zhongtan Road 725,605
+21 Zhenping Road 673,605
+22 Cao Yang Road 623,605
+23 Jinshajiang Road 527,605
+24 Zhongshan Park 527,670
+25 West Yan'an Road 527,716
+26 Hongqiao Road 527,777
     
 id: 5   
-name: 5号线   
+name: Line 5   
 colour: #9253B2   
-fromTo: 莘庄 闵行开发区  
+fromTo: Xinzhuang Minhang Development Zone  
 totalStations: 11   
-1 莘庄 294,1156
-2 春申路 245,1156
-3 银都路 245,1196
-4 颛桥 245,1244
-5 北桥 245,1285
-6 剑川路 245,1333
-7 东川路 245,1379
-8 金平路 194,1379
-9 华宁路 143,1379
-10 文井路 92,1379
-11 闵行开发区 41,1379
+1 Xinzhuang 294,1156
+2 Chunshen Road 245,1156
+3 Yindu Road 245,1196
+4 Zhuanqiao 245,1244
+5 Beiqiao 245,1285
+6 Jianchuan Road 245,1333
+7 Dongchuan Road 245,1379
+8 Jinping Road 194,1379
+9 Huaning Road 143,1379
+10 Wenjing Road 92,1379
+11 Minhang Development Zone 41,1379
     
 id: 6   
-name: 6号线   
+name: Line 6   
 colour: #D7006C   
-fromTo: 港城路 东方体育中心  
+fromTo: Gangcheng Rd Dongfang Sports Centre  
 totalStations: 28   
-1 港城路 1436,250
-2 外高桥保税区北 1437,304
-3 航津路 1437,358
-4 外高桥保税区南 1437,412
-5 洲海路 1437,466
-6 五洲大道 1437,520
-7 东靖路 1437,574
-8 巨峰路 1437,628
-9 五莲路 1437,690
-10 博兴路 1437,744
-11 金桥路 1394,744
-12 云山路 1343,744
-13 德平路 1295,744
-14 北洋泾路 1235,744
-15 民生路 1180,744
-16 源深体育中心 1115,744
-17 世纪大道 1042,744
-18 浦电路 989,832
-19 蓝村路 1042,925
-20 上海儿童医学中心 1065,964
-21 临沂新村 975,964
-22 高科西路 975,1012
-23 东明路 975,1054
-24 高青路 975,1090
-25 华夏西路 975,1137
-26 上南路 938,1137
-27 灵岩南路 894,1137
-28 东方体育中心 845,1137
+1 Gangcheng Road 1436,250
+2 Waigaoqiao Free Trade Zone North 1437,304
+3 Hangjin Road 1437,358
+4 Waigaoqiao Free Trade Zone South 1437,412
+5 Chau Hoi Road 1437,466
+6 Wuzhou Avenue 1437,520
+7 Dongjing Road 1437,574
+8 Jufeng Road 1437,628
+9 Wulian Road 1437,690
+10 Boxing Road 1437,744
+11 Jinqiao Road 1394,744
+12 Yunshan Road 1343,744
+13 De Ping Road 1295,744
+14 Peking Peking Road 1235,744
+15 Minsheng Road 1180,744
+16 Yuanshen Sports Centre 1115,744
+17 Century Avenue 1042,744
+18 Pudong Road 989,832
+19 Lancun Road 1042,925
+20 Shanghai Children's Medical Centre 1065,964
+21 Linyi Xincun 975,964
+22 West Gaoke Road 975,1012
+23 Dongming Road 975,1054
+24 Gaoqing Road 975,1090
+25 West Huaxia Road 975,1137
+26 Shangnan Road 938,1137
+27 Lingyan South Road 894,1137
+28 Oriental Sports Centre 845,1137
     
 id: 7   
-name: 7号线   
+name: Line 7   
 colour: #FF7F00   
 fromTo: 花木路 美兰湖  
 totalStations: 33   
-1 花木路 1202,834
-2 龙阳路 1203,887
-3 芳华路 1203,1012
-4 锦绣路 1113,1012
-5 杨高南路 1040,1012
-6 高科西路 975,1012
-7 云台路 908,1012
-8 耀华路 847,1012
-9 长清路 786,1012
-10 后滩 721,1012
-11 龙华中路 673,1012
-12 东安路 673,925
-13 肇嘉浜路 675,876
-14 常熟路 673,789
-15 静安寺 673,744
-16 昌平路 673,701
-17 长寿路 673,653
-18 镇坪路 673,605
-19 岚皋路 673,557
-20 新村路 673,501
-21 大华三路 673,452
-22 行知路 673,410
-23 大场镇 673,368
-24 场中路 673,326
-25 上大路 673,284
-26 南陈路 673,241
-27 上海大学 609,241
-28 祁华路 538,241
-29 顾村公园 538,198
-30 刘行 538,151
-31 潘广路 538,104
-32 罗南新村 538,57
-33 美兰湖 538,10
+1 Hua Mu Road 1202,834
+2 Longyang Road 1203,887
+3 Fang Hua Road 1203,1012
+4 Jinxiu Road 1113,1012
+5 South Yanggao Road 1040,1012
+6 West Gaoke Road 975,1012
+7 Yuntai Road 908,1012
+8 Yaohua Road 847,1012
+9 Changqing Road 786,1012
+10 Hou Tan 721,1012
+11 Longhua Middle Road 673,1012
+12 Dong'an Road 673,925
+13 Zhaojiabang Road 675,876
+14 Changshu Road 673,789
+15 Jing'an Temple 673,744
+16 Changping Road 673,701
+17 Changshou Road 673,653
+18 Zhenping Road 673,605
+19 Langao Road 673,557
+20 Xincun Road 673,501
+21 Dahua Third Road 673,452
+22 Xingzhi Road 673,410
+23 Dachan Township 673,368
+24 Field Middle Road 673,326
+25 Shangda Road 673,284
+26 Nan Chen Road 673,241
+27 Shanghai University 609,241
+28 Qihua Road 538,241
+29 Gucun Park 538,198
+30 Liu Xing 538,151
+31 Pan Guang Road 538,104
+32 Luonan Xincun 538,57
+33 Lake Malaren 538,10
     
 id: 8   
-name: 8号线   
+name: Line 8   
 colour: #0000FF   
 fromTo: 沈杜公路 市光路  
 totalStations: 30   
-1 沈杜公路 845,1404
-2 联航路 845,1361
-3 江月路 845,1317
-4 浦江镇 845,1272
-5 芦恒路 845,1232
-6 凌兆新村 845,1187
-7 东方体育中心 845,1137
-8 杨思 845,1096
-9 成山路 845,1051
-10 耀华路 847,1012
-11 中华艺术宫 847,964
-12 西藏南路 847,925
-13 陆家浜路 847,876
-14 老西门 847,833
-15 大世界 847,788
-16 人民广场 802,744
-17 曲阜路 850,661
-18 中兴路 850,570
-19 西藏北路 848,536
-20 虹口足球场 911,536
-21 曲阳路 977,536
-22 四平路 1032,536
-23 鞍山新村 1096,605
-24 江浦路 1147,605
-25 黄兴路 1200,605
-26 延吉中路 1200,550
-27 黄兴公园 1200,497
-28 翔殷路 1200,442
-29 嫩江路 1200,395
-30 市光路 1200,338
+1 Shendu Highway 845,1404
+2 Lianhang Road 845,1361
+3 Jiangyue Road 845,1317
+4 Pujiang Township 845,1272
+5 Luheng Road 845,1232
+6 Lingzhao Xincun 845,1187
+7 Oriental Sports Centre 845,1137
+8 Yangsi 845,1096
+9 Cheng Shan Road 845,1051
+10 Yiu Wah Road 847,1012
+11 China Arts Palace 847,964
+12 South Tibet Road 847,925
+13 Lujiabang Road 847,876
+14 Lao Ximen 847,833
+15 Great World 847,788
+16 People's Square 802,744
+17 Qufu Road 850,661
+18 ZTE Road 850,570
+19 North Xizang Road 848,536
+20 Hongkou Football Stadium 911,536
+21 Quyang Road 977,536
+22 Siping Road 1032,536
+23 Anshan Xincun 1096,605
+24 Jiangpu Road 1147,605
+25 Huangxing Road 1200,605
+26 Yanji Middle Road 1200,550
+27 Huangxing Park 1200,497
+28 Xiang Yin Road 1200,442
+29 Xianjiang Road 1200,395
+30 Shangguang Road 1200,338
     
 id: 9   
-name: 9号线   
+name: Line 9   
 colour: #7ac8ee   
-fromTo: 杨高中路 松江南站  
+fromTo: Yanggaozhong Rd Songjiang South Station  
 totalStations: 26   
-1 杨高中路 1115,781
-2 世纪大道 1042,744
-3 商城路 945,831
-4 小南门 897,876
-5 陆家浜路 847,876
-6 马当路 803,876
-7 打浦桥 764,876
-8 嘉善路 720,876
-9 肇嘉浜路 675,876
-10 徐家汇 616,876
-11 宜山路 527,876
-12 桂林路 475,876
-13 漕河泾开发区 421,876
-14 合川路 367,876
-15 星中路 313,876
-16 七宝 259,876
-17 中春路 205,876
-18 九亭 151,876
-19 泗泾 97,876
-20 佘山 97,940
-21 洞泾 97,984
-22 松江大学城 97,1042
-23 松江新城 97,1113
-24 松江体育中心 97,1186
+1 Yang Gao Zhong Road 1115,781
+2 Century Avenue 1042,744
+3 Shangcheng Rd 945,831
+4 Xiaonanmen 897,876
+5 Lujiabang Road 847,876
+6 Madang Road 803,876
+7 Taipu Bridge 764,876
+8 Jiashan Road 720,876
+9 Zhaojiabang Road 675,876
+10 Xujiahui 616,876
+11 Yishan Road 527,876
+12 Guilin Road 475,876
+13 Caohejing Development Zone 421,876
+14 Hechuan Road 367,876
+15 Xingzhong Road 313,876
+16 Qibao 259,876
+17 Zhongchun Road 205,876
+18 Jiuting 151,876
+19 Sijing 97,876
+20 Sheshan 97,940
+21 Dongjing 97,984
+22 Songjiang University Town 97,1042
+23 Songjiang New Town 97,1113
+24 Songjiang Sports Centre 97,1186
 25 醉白池 97,1260
-26 松江南站 97,1333
+26 Songjiang South Station 97,1333
     
 id: 10   
-name: 10号线   
+name: Line 10   
 colour: #C7AFD3   
-fromTo: 新江湾城 虹桥火车站  
+fromTo: Xin Jiangwan City Hongqiao Railway Station  
 totalStations: 28   
-1 新江湾城 1096,224
-2 殷高东路 1096,276
-3 三门路 1096,328
-4 江湾体育场 1096,380
-5 五角场 1096,432
-6 国权路 1096,484
-7 同济大学 1096,536
-8 四平路 1032,536
-9 邮电新村 1004,570
-10 海伦路 963,605
-11 四川北路 963,695
-12 天潼路 885,695
-13 南京东路 885,744
-14 豫园 886,833
-15 老西门 847,833
-16 新天地 770,833
-17 陕西南路 737,789
-18 上海图书馆 695,833
-19 交通大学 568,833
-20 虹桥路 527,777
-21 宋园路 475,777
-22 伊犁路 431,777
-23 水城路 388,777
-24 龙溪路 346,777
-25 上海动物园 295,777
-26 虹桥1号航站楼 226,777
-27 虹桥2号航站楼 226,670
-28 虹桥火车站 152,670
+1 New Jiangwan City 1096,224
+2 Yin Gao Dong Lu 1096,276
+3 Sanmen Road 1096,328
+4 Jiangwan Stadium 1096,380
+5 Wujiaochang 1096,432
+6 Guoquan Road 1096,484
+7 Tongji University 1096,536
+8 Siping Road 1032,536
+9 Post and Telecommunications Xincun 1004,570
+10 Helen Road 963,605
+11 North Sichuan Road 963,695
+12 Tiantong Road 885,695
+13 Nanjing East Road 885,744
+14 Yuyuan 886,833
+15 Lao Ximen 847,833
+16 Xintiandi 770,833
+17 South Shaanxi Road 737,789
+18 Shanghai Library 695,833
+19 Jiaotong University 568,833
+20 Hongqiao Road 527,777
+21 Songyuan Road 475,777
+22 Yili Road 431,777
+23 Shui Cheng Road 388,777
+24 Longxi Road 346,777
+25 Shanghai Zoo 295,777
+26 Hongqiao Terminal 1 226,777
+27 Hongqiao Terminal 2 226,670
+28 Hongqiao Railway Station 152,670
     
 id: 11   
-name: 10号线   
+name: Line 10   
 colour: #C7AFD3   
 fromTo: 新江湾城 航中路  
 totalStations: 27   
-1 新江湾城 1096,224
-2 殷高东路 1096,276
-3 三门路 1096,328
-4 江湾体育场 1096,380
-5 五角场 1096,432
-6 国权路 1096,484
-7 同济大学 1096,536
-8 四平路 1032,536
-9 邮电新村 1004,570
-10 海伦路 963,605
-11 四川北路 963,695
-12 天潼路 885,695
-13 南京东路 885,744
-14 豫园 886,833
-15 老西门 847,833
-16 新天地 770,833
-17 陕西南路 737,789
-18 上海图书馆 695,833
-19 交通大学 568,833
-20 虹桥路 527,777
-21 宋园路 475,777
-22 伊犁路 431,777
-23 水城路 388,777
-24 龙溪路 346,777
-25 龙柏新村 346,823
-26 紫藤路 289,823
-27 航中路 227,823
+1 New Jiangwan City 1096,224
+2 Yin Gao Dong Lu 1096,276
+3 Sanmen Road 1096,328
+4 Jiangwan Stadium 1096,380
+5 Wujiaochang 1096,432
+6 Guoquan Road 1096,484
+7 Tongji University 1096,536
+8 Siping Road 1032,536
+9 Post and Telecommunications Xincun 1004,570
+10 Helen Road 963,605
+11 North Sichuan Road 963,695
+12 Tiantong Road 885,695
+13 Nanjing East Road 885,744
+14 Yuyuan 886,833
+15 Lao Ximen 847,833
+16 Xintiandi 770,833
+17 South Shaanxi Road 737,789
+18 Shanghai Library 695,833
+19 Jiaotong University 568,833
+20 Hongqiao Road 527,777
+21 Songyuan Road 475,777
+22 Yili Road 431,777
+23 Shui Cheng Road 388,777
+24 Longxi Road 346,777
+25 Long Pak New Village 346,823
+26 Wisteria Road 289,823
+27 Hang Chung Road 227,82
