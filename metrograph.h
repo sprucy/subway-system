@@ -8,97 +8,87 @@
 #include <QVector>
 #include <QHash>
 
-//图的邻接点结构
+//Neighbourhood structure of Graph
 class Node{
 public:
-    int stationID;      //邻接点ID
-    double distance;    //两点距离
+    int stationID;      //Neighbourhood ID
+    double distance;    //Distance
 
-    //构造函数
+    //Constructer
     Node(){}
     Node(int s, double dist) :stationID(s), distance(dist)
     {}
 
-    //">"运算重载，用于小顶堆
     bool operator > (const Node& n) const
     {
         return this->distance>n.distance;
     }
 };
 
-//地铁管理类
+//Metro management category
 class MetroGraph
 {
 protected:
-    QVector<Station> stations;          //存储所有站点
-    QVector<Line> lines;                //存储所有线路
-    QHash<QString, int> stationsHash;   //站点名到存储位置的hash
-    QHash<QString, int> linesHash;      //线路名到存储位置的hash
-    QSet<Edge> edges;                   //所有边的集合
-    QVector<QVector<Node>> graph;       //地铁线路网络图
+    QVector<Station> stations; //store all stations
+    QVector<Line> lines; //store all lines
+    QHash<QString, int> stationsHash; //Station name to stored location hash
+    QHash<QString, int> linesHash; //hash of line names to storage locations
+    QSet<Edge> edges; //set of all edges
+    QVector<QVector<Node>> graph; //metro line network graph
 
 public:
-    //构造函数
     MetroGraph();
 
-    //获取线路名
+    //get line name
     QString getLineName(int l);
-    //获取线路颜色
-    QColor getLineColor(int l);
-    //获取线路hash值
-    int getLineHash(QString lineName);
-    //获取线路集合hash值
-    QList<int> getLinesHash(QList<QString> linesList);
-    //获取线路名集合
-    QList<QString> getLinesNameList();
-    //获取线路的所有包含站点
-    QList<QString> getLineStationsList(int l);
+    //Get the line colour
+    QColor getLineColor(int l); //Get the line hash value.
+    //Get the line hash value
+    int getLineHash(QString lineName); //Get the line hash value.
+    //Get the line hash value
+    QList<int> getLinesHash(QList<QString> linesList); //Get the lines collection hash value.
+    //Get the set of line names
+    QList<QString> getLinesNameList(); //Get the set of line names.
+    //Get all contained stations of the line
+    QList<QString> getLineStationsList(int l); //Get the set of line names.
 
-    //获取站点名
+    //Get station name
     QString getStationName(int s);
-    //获取站点地理坐标
+    //Get the geographic coordinates of the site
     QPointF getStationCoord(int s);
-    //获取站点最小坐标
+    //Get the minimum coordinates of the site
     QPointF getMinCoord();
-    //获取站点最大坐标
+    //Get the maximum coordinates of the site
     QPointF getMaxCoord();
-    //获取站点所属线路信息
+    //Get information about the line the station belongs to
     QList<int> getStationLinesInfo(int s);
-    //获取两个站点的公共所属线路
+    //Get the publicly owned routes of the two stations
     QList<int> getCommonLines(int s1, int s2);
-    //获取站点hash值
+    //get site hash value
     int getStationHash(QString stationName);
-    //获取站点集合hash值
+    //Get the site collection hash value
     QList<QString> getStationsNameList();
 
-    //添加新线路
+    //Add new lines
     void addLine(QString lineName, QColor color);
-    //添加新站点
+    //Add new stations
     void addStation(Station s);
-    //添加站点连接关系
+    //Add station connections
     void addConnection(int s1, int s2, int l);
 
-    //获取网络结构，用于前端显示
     void getGraph(QList<int>&stationsList, QList<Edge>&edgesList);
-    //获取最少时间的线路
     bool queryTransferMinTime(int s1, int s2,
                               QList<int>&stationsList,
                               QList<Edge>&edgesList);
-    //获取最少换乘的线路
     bool queryTransferMinTransfer(int s1, int s2,
                                   QList<int>&stationsList,
                                   QList<Edge>&edgesList);
-    //从文件读取数据
     bool readFileData(QString fileName);
 
 private:
-    //清空数据
     void clearData();
-    //插入一条边
     bool insertEdge(int s1, int s2);
-    //更新边界XY
     void updateMinMaxXY();
-    //生成图结构
     void makeGraph();
 };
 
