@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icon/splash.png</file>
+        <file>icon/subway.png</file>
+    </qresource>
+    <qresource prefix="/data">
+        <file>data/metroLine.txt</file>
+    </qresource>
+</RCC>
