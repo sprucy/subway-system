@@ -286,7 +286,7 @@ void MainWindow::appendConnection()
 }
 
 
-//查看所有线路图
+//View all route maps
 void MainWindow::drawLineMap()
 {
     scene->clear();
@@ -299,7 +299,7 @@ void MainWindow::drawLineMap()
 }
 
 
-//动作关闭程序槽函数
+// Action to close the programme slot function
 void MainWindow::on_actionClose_triggered()
 {
     close();
