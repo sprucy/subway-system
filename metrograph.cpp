@@ -5,13 +5,11 @@
 #include <queue>
 
 
-//构造函数
 MetroGraph::MetroGraph()
 {
 
 }
 
-//从文件读取数据
 bool MetroGraph::readFileData(QString fileName)
 {
     QFile file(fileName);
@@ -98,7 +96,6 @@ bool MetroGraph::readFileData(QString fileName)
     return true;
 }
 
-//清空数据
 void MetroGraph::clearData()
 {
     stations.clear();
@@ -109,7 +106,6 @@ void MetroGraph::clearData()
     graph.clear();
 }
 
-//插入一条边
 bool MetroGraph::insertEdge(int n1, int n2)
 {
     if (edges.contains(Edge(n1, n2)) || edges.contains(Edge(n2, n1)))
@@ -120,7 +116,6 @@ bool MetroGraph::insertEdge(int n1, int n2)
     return true;
 }
 
-//生成图结构
 void MetroGraph::makeGraph()
 {
     graph.clear();
@@ -134,19 +129,17 @@ void MetroGraph::makeGraph()
 }
 
 
-//获取线路颜色
 QColor MetroGraph::getLineColor(int l)
 {
     return lines[l].color;
 }
 
-//获取线路名
 QString MetroGraph::getLineName(int l)
 {
     return lines[l].name;
 }
 
-//获取线路hash值
+
 int MetroGraph::getLineHash(QString lineName)
 {
     if(linesHash.contains(lineName))
@@ -156,7 +149,7 @@ int MetroGraph::getLineHash(QString lineName)
     return -1;
 }
 
-//获取线路集合hash值
+
 QList<int> MetroGraph::getLinesHash(QList<QString> linesList)
 {
     QList<int> hashList;
@@ -167,7 +160,7 @@ QList<int> MetroGraph::getLinesHash(QList<QString> linesList)
     return hashList;
 }
 
-//获取线路名集合
+
 QList<QString> MetroGraph::getLinesNameList()
 {
     QList<QString> linesNameList;
@@ -178,7 +171,6 @@ QList<QString> MetroGraph::getLinesNameList()
     return linesNameList;
 }
 
-//获取线路的所有包含站点
 QList<QString> MetroGraph::getLineStationsList(int l)
 {
     QList<QString> stationsList;
@@ -191,7 +183,6 @@ QList<QString> MetroGraph::getLineStationsList(int l)
 
 
 
-//更新边界XY
 void MetroGraph::updateMinMaxXY()
 {
     double minX=200, minY=200;
@@ -212,19 +203,16 @@ void MetroGraph::updateMinMaxXY()
 
 }
 
- //获取站点最小坐标
 QPointF MetroGraph::getMinCoord()
 {
     return QPointF(Station::minX, Station::minY);
 }
 
-//获取站点最大坐标
 QPointF MetroGraph::getMaxCoord()
 {
     return QPointF(Station::maxX, Station::maxY);
 }
 
-//获取两个站点的公共所属线路
 QList<int> MetroGraph::getCommonLines(int s1, int s2)
 {
     QList<int> linesList;
@@ -236,25 +224,21 @@ QList<int> MetroGraph::getCommonLines(int s1, int s2)
     return linesList;
 }
 
-//获取站点名
 QString MetroGraph::getStationName(int s)
 {
     return stations[s].name;
 }
 
-//获取站点地理坐标
 QPointF MetroGraph::getStationCoord(int s)
 {
     return QPointF(stations[s].X, stations[s].Y);
 }
 
-//获取站点所属线路信息
 QList<int> MetroGraph::getStationLinesInfo(int s)
 {
     return stations[s].linesInfo.toList();
 }
 
-//获取站点hash值
 int MetroGraph::getStationHash(QString stationName)
 {
     if(stationsHash.contains(stationName))
@@ -264,7 +248,6 @@ int MetroGraph::getStationHash(QString stationName)
     return -1;
 }
 
-//获取站点集合hash值
 QList<QString> MetroGraph::getStationsNameList()
 {
     QList<QString> list;
@@ -277,14 +260,13 @@ QList<QString> MetroGraph::getStationsNameList()
 
 
 
-//添加新线路
+
 void MetroGraph::addLine(QString lineName, QColor color)
 {
     linesHash[lineName]=lines.size();
     lines.push_back(Line(lineName,color));
 }
 
-//添加新站点
 void MetroGraph::addStation(Station s)
 {
     int hash=stations.size();
@@ -297,7 +279,7 @@ void MetroGraph::addStation(Station s)
     updateMinMaxXY();
 }
 
-//添加站点连接关系
+
 void MetroGraph::addConnection(int s1, int s2, int l)
 {
     insertEdge(s1,s2);
@@ -307,7 +289,6 @@ void MetroGraph::addConnection(int s1, int s2, int l)
 
 
 
-//获取网络结构，用于前端显示
 void MetroGraph::getGraph(QList<int>&stationsList, QList<Edge>&edgesList)
 {
     stationsList.clear();
@@ -319,7 +300,7 @@ void MetroGraph::getGraph(QList<int>&stationsList, QList<Edge>&edgesList)
     return ;
 }
 
-//获取最少时间的线路
+
 bool MetroGraph::queryTransferMinTime(int s1, int s2, QList<int>&stationsList, QList<Edge>&edgesList)
 {
 #define INF 999999999
@@ -375,7 +356,7 @@ bool MetroGraph::queryTransferMinTime(int s1, int s2, QList<int>&stationsList, Q
     return true;
 }
 
-//获取最少换乘的线路
+
 bool MetroGraph::queryTransferMinTransfer(int s1, int s2, QList<int>&stationsList, QList<Edge>&edgesList)
 {
     stationsList.clear();
